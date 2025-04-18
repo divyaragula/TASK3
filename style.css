@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  .carousel-section, .joke-section {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Responsive Design using Media Queries */
+  @media (max-width: 768px) {
+    .carousel-img {
+      max-height: 200px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .prev, .next {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1, h2 {
+      font-size: 18px;
+    }
+  
+    .carousel-img {
+      max-height: 150px;
+    }
+  }
+  
